@@ -5,7 +5,10 @@ const mhs = {
     expenses : [],
 } 
  const addExpenses = function(desc,amo){
-    mhs.expenses.push({description: desc, amount: amo});  
+    mhs.expenses.push({
+        description: desc,
+        amount: amo
+    });  
  };
 
 const getAccountSummary = function(){
