@@ -3,17 +3,17 @@
 const mhs = {
      nama: 'rein',
     expenses : [],
-};
- conts addExpenses = function(desc,amo){
+} 
+ const addExpenses = function(desc,amo){
     mhs.expenses.push({description: desc, amount: amo});  
  };
 
-conts getAccountSummary = function(){
+const getAccountSummary = function(){
     let totalExpenses = 0;
-    account.expenses.forEach(function (el){
+    mhs.expenses.forEach(function (el){
         totalExpenses = totalExpenses + el.amount
 });
-return "Total Pengeluaran " + account.name + "adalah Rp. " + totalExpenses;
+return "Total Pengeluaran " + mhs.nama + " adalah Rp. " + totalExpenses;
 };
 
 addExpenses('Beli Makan', 15000);
