@@ -34,3 +34,19 @@
  const panggilan = (nama) => `Hay ${nama}`;
 
 console.log(panggilan('Bang Jaxx')); // Output: Hay Bang Jaxx
+
+
+// Exercise
+// convert to ES6 syntax
+
+const yearUntilRetirement = (years, firstName) => { 
+  let age = 28;
+  const retirement = 65 - age;
+  if (retirement > 0){
+    console.log(' ${firstName} retired in ${retirement} years');
+  } else {
+    console.log('${firstName} already retired.');
+  }
+  return retirement;
+}
+console.log(yearUntilRetirement(2020,"Bang Jaxx"));
