@@ -1,16 +1,24 @@
 import './App.css';
-import Header from './Components/Header';
-import Hello from './Components/Hello';
-import Content from './Components/Content';
+import Card from './Components/card';
+import {person} from './Utils/person';
+import Counter from "./Components/counter" 
 
 function App() {
   return (
     <>
-      <Header />
-      <Hello />
-      <Content />
+      {/*person.map((item) =>{
+        return(
+          <Card
+            name={item.name}
+            institution={item.institution}
+            address={item.address}
+            phone={item.phone}
+          />
+        );
+      })*/}
+      <Counter title = "Counter Component"/>
     </>
   );
-};
+}
 
 export default App;
